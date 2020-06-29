@@ -1,0 +1,105 @@
+{
+    "changed": false,
+    "data": {
+        "count": 4,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-02-11T21:25:42.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "d1e52116-b307-4d9e-9d5f-cfd93ae48d49",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2256:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2256:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "azpoc-app",
+                "networkDomain": {
+                    "id": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                    "name": "azpoc"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-02-11T21:26:24.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "2051fdf8-7f85-495c-bdf1-b2bf2ed42eb8",
+                "ipv4GatewayAddress": "10.0.1.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2257:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2257:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "azpoc-db1",
+                "networkDomain": {
+                    "id": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                    "name": "azpoc"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.1.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-02-11T21:26:56.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "36c6b6a5-fdeb-4f7d-9d6a-63304794d9f0",
+                "ipv4GatewayAddress": "10.0.2.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2258:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2258:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "azpoc-db2",
+                "networkDomain": {
+                    "id": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                    "name": "azpoc"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.2.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-02-11T21:27:38.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "ff9f2c98-7763-4a8c-81a9-128bdd370661",
+                "ipv4GatewayAddress": "10.0.3.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2259:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2259:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "azpoc-web",
+                "networkDomain": {
+                    "id": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                    "name": "azpoc"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.3.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

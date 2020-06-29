@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-05-12T12:40:17.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "c03b967a-a1a1-462e-94df-771925b533f2",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1323:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1323:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "ansible_role_testing",
+                "networkDomain": {
+                    "id": "40377802-d9d0-40b1-b587-4f9539435c91",
+                    "name": "Stoner"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

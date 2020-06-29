@@ -1,0 +1,29 @@
+
+
+- name: List all Server Security Groups VLANs in a Network Domain
+  nttmcp.mcp.sec_group_info:
+    # auth: "{{auth}}"
+    region: "{{ region }}"
+    datacenter: "{{ datacenter }}"
+    network_domain:  '{{ item.name }}'
+    type: vlan
+  register: output
+- debug: var=output
+- copy:
+    content: '{{output | to_nice_json }}'
+    dest: "./output/secgrp_vlan_{{ item.name }}.json"
+  delegate_to: localhost
+
+- name: List all Server Security Groups Servers in a Network Domain
+  nttmcp.mcp.sec_group_info:
+    # auth: "{{auth}}"
+    region: "{{ region }}"
+    datacenter: "{{ datacenter }}"
+    network_domain:  '{{ item.name }}'
+    type: server
+  register: output
+- debug: var=output
+- copy:
+    content: '{{output | to_nice_json }}'
+    dest: "./output/secgrp_server_{{ item.name }}.json"
+  delegate_to: localhost

@@ -1,0 +1,20 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "security_group": [
+            {
+                "createTime": "2020-05-14T19:00:29.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "id": "66747ea4-2826-479a-9e81-41000208049b",
+                "name": "ProdWebTierSG1",
+                "servers": {
+                    "networkDomainId": "bfb35883-94c5-46ac-9c51-17260c01b99f"
+                },
+                "state": "NORMAL",
+                "type": "SERVER"
+            }
+        ]
+    },
+    "failed": false
+}

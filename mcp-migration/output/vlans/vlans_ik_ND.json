@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-03-12T11:29:46.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "c81acfdc-c5c4-481c-8ab0-08a0b44a8833",
+                "ipv4GatewayAddress": "10.7.19.1",
+                "ipv6GatewayAddress": "2607:f480:111:1547:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1547:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "ik_vlan1",
+                "networkDomain": {
+                    "id": "fe174f0b-9434-437f-b213-1163cf07bb44",
+                    "name": "ik_ND"
+                },
+                "privateIpv4Range": {
+                    "address": "10.7.19.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

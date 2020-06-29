@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "network_domain": [
+            {
+                "baselineSnatExclusionConfiguration": true,
+                "baselineStaticRouteConfiguration": true,
+                "createTime": "2020-01-06T20:42:13.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Network Domain for DRS testing on Non-Hana Servers",
+                "id": "d6f0740b-9026-4222-a0a5-f21e37c2a767",
+                "ipv4CpncGatewayAddress": "100.101.49.247",
+                "ipv4InternetGatewayAddress": "100.101.49.241",
+                "ipv6CpncGatewayAddress": "2607:f480:9901:742:0:0:0:7",
+                "ipv6InternetGatewayAddress": "2607:f480:9901:742:0:0:0:1",
+                "name": "SAPDRS_POC",
+                "outsideTransitVlanIpv4Subnet": {
+                    "address": "100.101.49.240",
+                    "prefixSize": 28
+                },
+                "outsideTransitVlanIpv6Subnet": {
+                    "address": "2607:f480:9901:742:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "snatIpv4Address": "165.180.34.159",
+                "state": "NORMAL",
+                "type": "ENTERPRISE"
+            }
+        ]
+    },
+    "failed": false
+}

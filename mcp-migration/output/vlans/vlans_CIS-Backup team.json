@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2018-11-16T11:38:03.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "2e916d41-9b4b-4d4e-af99-23c36265a678",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1245:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1245:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "CIS Backup team",
+                "networkDomain": {
+                    "id": "7da40388-3404-4454-a953-3b8fa732f037",
+                    "name": "CIS-Backup team"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

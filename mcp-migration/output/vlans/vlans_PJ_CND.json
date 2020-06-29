@@ -1,0 +1,83 @@
+{
+    "changed": false,
+    "data": {
+        "count": 3,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-10-23T18:31:40.000Z",
+                "datacenterId": "NA9",
+                "description": "VLAN to test Connectivity",
+                "gatewayAddressing": "LOW",
+                "id": "510407ee-0bb2-4f61-b060-b95a51703a84",
+                "ipv4GatewayAddress": "10.10.10.1",
+                "ipv6GatewayAddress": "2607:f480:111:1176:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1176:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "PJ_VLAN",
+                "networkDomain": {
+                    "id": "765b1513-7d83-4561-a8d6-242719178ebd",
+                    "name": "PJ_CND"
+                },
+                "privateIpv4Range": {
+                    "address": "10.10.10.0",
+                    "prefixSize": 23
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": false,
+                "createTime": "2019-10-23T18:39:10.000Z",
+                "datacenterId": "NA9",
+                "description": "VLAN to test Connectivity",
+                "gatewayAddressing": "NONE",
+                "id": "feb72888-aff0-4c05-ba92-4058e66c6646",
+                "ipv4GatewayAddress": "10.10.10.254",
+                "ipv6GatewayAddress": "2607:f480:111:1200:0:0:0:ff",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1200:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "PJ_VLAN_Detached",
+                "networkDomain": {
+                    "id": "765b1513-7d83-4561-a8d6-242719178ebd",
+                    "name": "PJ_CND"
+                },
+                "privateIpv4Range": {
+                    "address": "10.20.10.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2019-11-18T17:05:35.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "1a06b819-f948-4638-940d-fc71d9623a6d",
+                "ipv4GatewayAddress": "172.16.16.1",
+                "ipv6GatewayAddress": "2607:f480:111:1373:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1373:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "PJ_VLAN2",
+                "networkDomain": {
+                    "id": "765b1513-7d83-4561-a8d6-242719178ebd",
+                    "name": "PJ_CND"
+                },
+                "privateIpv4Range": {
+                    "address": "172.16.16.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

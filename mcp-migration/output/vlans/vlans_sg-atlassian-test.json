@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-07-25T12:31:22.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "2565717e-78d0-465f-8bf8-1ff9e12c4b79",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1475:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1475:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "sg-atlassian-test-vlan",
+                "networkDomain": {
+                    "id": "20bf13fc-97d7-4cc2-a175-da51ae7e719d",
+                    "name": "sg-atlassian-test"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

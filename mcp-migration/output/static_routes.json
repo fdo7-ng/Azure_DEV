@@ -1,0 +1,65 @@
+{
+    "changed": false,
+    "data": {
+        "count": 4,
+        "route": [
+            {
+                "createTime": "2020-01-06T20:42:13.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Network Domain route to CPNC",
+                "destinationNetworkAddress": "10.0.0.0",
+                "destinationPrefixSize": 8,
+                "id": "3cb4129a-9143-4ee5-84c9-0bd7a3a2c69c",
+                "ipVersion": "IPV4",
+                "name": "CCSYSTEM.cpnc_10.0.0.0_8",
+                "networkDomainId": "d6f0740b-9026-4222-a0a5-f21e37c2a767",
+                "nextHopAddress": "100.101.49.247",
+                "state": "NORMAL",
+                "type": "SYSTEM"
+            },
+            {
+                "createTime": "2020-01-06T20:42:13.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Network Domain route to CPNC",
+                "destinationNetworkAddress": "172.16.0.0",
+                "destinationPrefixSize": 12,
+                "id": "a7cabd06-a4dc-4d97-b7db-a146c0945603",
+                "ipVersion": "IPV4",
+                "name": "CCSYSTEM.cpnc_172.16.0.0_12",
+                "networkDomainId": "d6f0740b-9026-4222-a0a5-f21e37c2a767",
+                "nextHopAddress": "100.101.49.247",
+                "state": "NORMAL",
+                "type": "SYSTEM"
+            },
+            {
+                "createTime": "2020-01-06T20:42:13.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Network Domain route to CPNC",
+                "destinationNetworkAddress": "192.168.0.0",
+                "destinationPrefixSize": 16,
+                "id": "827220f4-12a5-461f-95a1-d34d84458fd6",
+                "ipVersion": "IPV4",
+                "name": "CCSYSTEM.cpnc_192.168.0.0_16",
+                "networkDomainId": "d6f0740b-9026-4222-a0a5-f21e37c2a767",
+                "nextHopAddress": "100.101.49.247",
+                "state": "NORMAL",
+                "type": "SYSTEM"
+            },
+            {
+                "createTime": "2020-01-06T20:42:13.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Default IPv4 route to Internet",
+                "destinationNetworkAddress": "0.0.0.0",
+                "destinationPrefixSize": 0,
+                "id": "94df7abe-4542-4ae6-ae62-cf65755d3a36",
+                "ipVersion": "IPV4",
+                "name": "CCSYSTEM.inet_default_ipv4",
+                "networkDomainId": "d6f0740b-9026-4222-a0a5-f21e37c2a767",
+                "nextHopAddress": "100.101.49.241",
+                "state": "NORMAL",
+                "type": "SYSTEM"
+            }
+        ]
+    },
+    "failed": false
+}

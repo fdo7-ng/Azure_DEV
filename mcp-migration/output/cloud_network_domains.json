@@ -1,0 +1,104 @@
+{
+    "changed": false,
+    "data": {
+        "count": 4,
+        "network_domain": [
+            {
+                "baselineSnatExclusionConfiguration": true,
+                "baselineStaticRouteConfiguration": true,
+                "createTime": "2020-02-11T21:25:10.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Lazuli Testing",
+                "id": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "ipv4CpncGatewayAddress": "100.101.50.39",
+                "ipv4InternetGatewayAddress": "100.101.50.33",
+                "ipv6CpncGatewayAddress": "2607:f480:9901:745:0:0:0:7",
+                "ipv6InternetGatewayAddress": "2607:f480:9901:745:0:0:0:1",
+                "name": "azpoc",
+                "outsideTransitVlanIpv4Subnet": {
+                    "address": "100.101.50.32",
+                    "prefixSize": 28
+                },
+                "outsideTransitVlanIpv6Subnet": {
+                    "address": "2607:f480:9901:745:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "snatIpv4Address": "165.180.34.162",
+                "state": "NORMAL",
+                "type": "ENTERPRISE"
+            },
+            {
+                "baselineSnatExclusionConfiguration": true,
+                "baselineStaticRouteConfiguration": true,
+                "createTime": "2020-05-13T14:23:28.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "Network Domain used for the Advance Azure POC",
+                "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                "ipv4CpncGatewayAddress": "100.101.50.87",
+                "ipv4InternetGatewayAddress": "100.101.50.81",
+                "ipv6CpncGatewayAddress": "2607:f480:9901:748:0:0:0:7",
+                "ipv6InternetGatewayAddress": "2607:f480:9901:748:0:0:0:1",
+                "name": "Advanced_POC",
+                "outsideTransitVlanIpv4Subnet": {
+                    "address": "100.101.50.80",
+                    "prefixSize": 28
+                },
+                "outsideTransitVlanIpv6Subnet": {
+                    "address": "2607:f480:9901:748:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "snatIpv4Address": "165.180.34.165",
+                "state": "NORMAL",
+                "type": "ENTERPRISE"
+            },
+            {
+                "baselineSnatExclusionConfiguration": true,
+                "baselineStaticRouteConfiguration": true,
+                "createTime": "2020-05-18T21:38:35.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "description": "irfanND for testing purpose",
+                "id": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "ipv4CpncGatewayAddress": "100.101.50.103",
+                "ipv4InternetGatewayAddress": "100.101.50.97",
+                "ipv6CpncGatewayAddress": "2607:f480:9901:749:0:0:0:7",
+                "ipv6InternetGatewayAddress": "2607:f480:9901:749:0:0:0:1",
+                "name": "irfanND",
+                "outsideTransitVlanIpv4Subnet": {
+                    "address": "100.101.50.96",
+                    "prefixSize": 28
+                },
+                "outsideTransitVlanIpv6Subnet": {
+                    "address": "2607:f480:9901:749:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "snatIpv4Address": "165.180.34.166",
+                "state": "NORMAL",
+                "type": "ENTERPRISE"
+            },
+            {
+                "baselineSnatExclusionConfiguration": true,
+                "baselineStaticRouteConfiguration": true,
+                "createTime": "2020-05-27T14:09:53.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "id": "74365732-41ca-4872-8993-f30ddc5ee8bf",
+                "ipv4CpncGatewayAddress": "100.101.50.71",
+                "ipv4InternetGatewayAddress": "100.101.50.65",
+                "ipv6CpncGatewayAddress": "2607:f480:9901:747:0:0:0:7",
+                "ipv6InternetGatewayAddress": "2607:f480:9901:747:0:0:0:1",
+                "name": "Raghu",
+                "outsideTransitVlanIpv4Subnet": {
+                    "address": "100.101.50.64",
+                    "prefixSize": 28
+                },
+                "outsideTransitVlanIpv6Subnet": {
+                    "address": "2607:f480:9901:747:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "snatIpv4Address": "165.180.34.164",
+                "state": "NORMAL",
+                "type": "ESSENTIALS"
+            }
+        ]
+    },
+    "failed": false
+}

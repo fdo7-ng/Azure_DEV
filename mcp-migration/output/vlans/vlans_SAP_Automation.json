@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-12-18T19:20:41.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "c2ad9069-ac97-4d38-b6c8-5e5c2f9e2a67",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2253:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2253:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "SAP_VLAN_01",
+                "networkDomain": {
+                    "id": "a6ddd61b-3cb9-4fa2-8c8f-eab6f55c8915",
+                    "name": "SAP_Automation"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

@@ -1,0 +1,131 @@
+{
+    "changed": false,
+    "data": {
+        "acl": [
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 25
+                    }
+                },
+                "enabled": true,
+                "id": "b6a210f6-7e1d-43d1-9aca-f349ae49813f",
+                "ipVersion": "IPV4",
+                "name": "CCDEFAULT.BlockOutboundMailIPv4",
+                "networkDomainId": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 587
+                    }
+                },
+                "enabled": true,
+                "id": "12de8262-ebe4-4b3a-bc28-0f3d16f1ed3c",
+                "ipVersion": "IPV4",
+                "name": "CCDEFAULT.BlockOutboundMailIPv4Secure",
+                "networkDomainId": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 25
+                    }
+                },
+                "enabled": true,
+                "id": "0bb60dfb-71bb-4037-ac85-84757aff47f5",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.BlockOutboundMailIPv6",
+                "networkDomainId": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 587
+                    }
+                },
+                "enabled": true,
+                "id": "341eea4d-ee49-4ce0-a80b-e335f7f5533e",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.BlockOutboundMailIPv6Secure",
+                "networkDomainId": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "enabled": true,
+                "id": "c48eae34-5cc2-4669-a0be-019dee14faf6",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.DenyExternalInboundIPv6",
+                "networkDomainId": "594c0b1e-7632-4835-b51f-3b1809f419fc",
+                "protocol": "IP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "EXTERNAL_IPV6"
+                    }
+                },
+                "state": "NORMAL"
+            }
+        ],
+        "count": 5
+    },
+    "failed": false
+}

@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-03-19T06:31:06.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "2bca7560-cdfd-4d78-9da9-d95b9c625a96",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1550:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1550:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "hutiyapa2",
+                "networkDomain": {
+                    "id": "a092c7a6-c2fc-43f7-9c0f-daee8b166b3d",
+                    "name": "POC-DB-HA"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

@@ -1,0 +1,364 @@
+{
+    "changed": false,
+    "data": {
+        "acl": [
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 25
+                    }
+                },
+                "enabled": true,
+                "id": "9d6a9c30-0be1-48df-b3e1-7f8090d0deb6",
+                "ipVersion": "IPV4",
+                "name": "CCDEFAULT.BlockOutboundMailIPv4",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 587
+                    }
+                },
+                "enabled": true,
+                "id": "65d47378-1bff-4ba2-b822-de837651f304",
+                "ipVersion": "IPV4",
+                "name": "CCDEFAULT.BlockOutboundMailIPv4Secure",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 25
+                    }
+                },
+                "enabled": true,
+                "id": "509519f9-2ded-4512-9c09-2bc927e09259",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.BlockOutboundMailIPv6",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    },
+                    "port": {
+                        "begin": 587
+                    }
+                },
+                "enabled": true,
+                "id": "150fc158-8189-4c65-a473-9b46b6627e42",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.BlockOutboundMailIPv6Secure",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "DROP",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "ANY"
+                    }
+                },
+                "enabled": true,
+                "id": "3ddbe6f2-3b02-4eb3-b523-643dfca4fe60",
+                "ipVersion": "IPV6",
+                "name": "CCDEFAULT.DenyExternalInboundIPv6",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "IP",
+                "ruleType": "DEFAULT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "EXTERNAL_IPV6"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ip": {
+                        "address": "10.0.1.6"
+                    },
+                    "port": {
+                        "begin": 3306
+                    }
+                },
+                "enabled": true,
+                "id": "b56fb467-0f54-43c5-b73d-cccec19e4d04",
+                "ipVersion": "IPV4",
+                "name": "tomcat",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ip": {
+                        "address": "10.0.3.6"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "6c5e6f2c-f73b-4aa5-ad48-b81bc3e90df5",
+                        "name": "IPv4.AD"
+                    },
+                    "portList": {
+                        "id": "ef4a2cde-d346-400b-b5c9-a55f33c400e9",
+                        "name": "TCP.AD"
+                    }
+                },
+                "enabled": true,
+                "id": "be06f359-e8b7-4126-9cc2-da13f0f7ce70",
+                "ipVersion": "IPV4",
+                "name": "IPv4.TCP.Client.To.AD",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "89ae69cf-fee2-451d-b584-a1b5410efa7e",
+                        "name": "IPv4.Networks"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "b9f4ccc5-6871-4f54-a16d-414fd4faefcf",
+                        "name": "IPv6.AD"
+                    },
+                    "portList": {
+                        "id": "ef4a2cde-d346-400b-b5c9-a55f33c400e9",
+                        "name": "TCP.AD"
+                    }
+                },
+                "enabled": true,
+                "id": "9b725750-5ecd-473f-a188-cd0033d9e806",
+                "ipVersion": "IPV6",
+                "name": "IPv6.TCP.Client.To.AD",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "TCP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "712a9b4f-e511-452a-b87d-20ea848e51a8",
+                        "name": "IPv6.Networks"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "6c5e6f2c-f73b-4aa5-ad48-b81bc3e90df5",
+                        "name": "IPv4.AD"
+                    },
+                    "portList": {
+                        "id": "e95dd78f-9eff-4b69-bc9c-97bca0ac0163",
+                        "name": "UDP.AD"
+                    }
+                },
+                "enabled": true,
+                "id": "6767813e-66a8-4c62-9dd1-4fe6bcf776c8",
+                "ipVersion": "IPV4",
+                "name": "IPv4.UDP.Client.To.AD",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "UDP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "89ae69cf-fee2-451d-b584-a1b5410efa7e",
+                        "name": "IPv4.Networks"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "b9f4ccc5-6871-4f54-a16d-414fd4faefcf",
+                        "name": "IPv6.AD"
+                    },
+                    "portList": {
+                        "id": "e95dd78f-9eff-4b69-bc9c-97bca0ac0163",
+                        "name": "UDP.AD"
+                    }
+                },
+                "enabled": true,
+                "id": "d00197e1-9f20-4362-98e9-e6272447ca5c",
+                "ipVersion": "IPV6",
+                "name": "IPv6.UDP.Client.To.AD",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "UDP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "712a9b4f-e511-452a-b87d-20ea848e51a8",
+                        "name": "IPv6.Networks"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "de1c8d75-0d50-4d1a-a9f0-a56b43eee3a2",
+                        "name": "SQLServer.v6"
+                    }
+                },
+                "enabled": true,
+                "id": "f522c472-1248-4ca3-bb02-31bcf287acd6",
+                "ipVersion": "IPV6",
+                "name": "SQL.v6.To.SQL",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "IP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "01900fd5-c6ba-4ea5-9442-5ae614041ed3",
+                        "name": "SharePoint.v6"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "a806c33e-553f-42c0-922c-b928db1ae22c",
+                        "name": "SQLServer.v4"
+                    }
+                },
+                "enabled": true,
+                "id": "7c87889e-5812-4351-a7ae-866c3ee54cb3",
+                "ipVersion": "IPV4",
+                "name": "SQL.v4.To.SQL",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "IP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "98851128-1fd5-48be-b715-a1c0e96ed9ff",
+                        "name": "SharePoint.v4"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "a806c33e-553f-42c0-922c-b928db1ae22c",
+                        "name": "SQLServer.v4"
+                    }
+                },
+                "enabled": true,
+                "id": "f169b57e-aad1-4f23-a980-552a01af5afb",
+                "ipVersion": "IPV4",
+                "name": "SQL.v4.To.Client",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "IP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "a806c33e-553f-42c0-922c-b928db1ae22c",
+                        "name": "SQLServer.v4"
+                    }
+                },
+                "state": "NORMAL"
+            },
+            {
+                "action": "ACCEPT_DECISIVELY",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "destination": {
+                    "ipAddressList": {
+                        "id": "01900fd5-c6ba-4ea5-9442-5ae614041ed3",
+                        "name": "SharePoint.v6"
+                    }
+                },
+                "enabled": true,
+                "id": "1827cdd4-bc3b-4427-9618-72bd84ebe728",
+                "ipVersion": "IPV6",
+                "name": "SQL.v6.To.Client",
+                "networkDomainId": "ed7a9810-b2fd-40d8-b835-7ee7351b0748",
+                "protocol": "IP",
+                "ruleType": "CLIENT_RULE",
+                "source": {
+                    "ipAddressList": {
+                        "id": "de1c8d75-0d50-4d1a-a9f0-a56b43eee3a2",
+                        "name": "SQLServer.v6"
+                    }
+                },
+                "state": "NORMAL"
+            }
+        ],
+        "count": 14
+    },
+    "failed": false
+}

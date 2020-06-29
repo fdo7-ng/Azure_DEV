@@ -1,0 +1,13 @@
+
+- name: List all firewall rules within a Cloud Network Domain``
+  nttmcp.mcp.firewall_info:
+    # auth: "{{auth}}"
+    region: "{{ region }}"
+    datacenter: "{{ datacenter }}"
+    network_domain: '{{ item.name }}'
+  register: output
+- debug: var=output
+- copy:
+    content: '{{output | to_nice_json }}'
+    dest: "./output/firewall_{{ item.name }}.json"
+  delegate_to: localhost

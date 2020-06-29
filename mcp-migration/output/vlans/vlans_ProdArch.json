@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-12-06T03:14:55.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "bf567a0e-042f-40a6-a402-fc2414ac32eb",
+                "ipv4GatewayAddress": "192.168.81.1",
+                "ipv6GatewayAddress": "2607:f480:111:1443:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1443:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "app",
+                "networkDomain": {
+                    "id": "31266588-88c5-4e94-a8b5-ce92bf538e6d",
+                    "name": "ProdArch"
+                },
+                "privateIpv4Range": {
+                    "address": "192.168.81.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

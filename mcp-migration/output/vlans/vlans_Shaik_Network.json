@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-09-12T13:07:02.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "f2643f67-0a99-449c-89cb-ebd49856251b",
+                "ipv4GatewayAddress": "172.16.16.1",
+                "ipv6GatewayAddress": "2607:f480:111:1510:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1510:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Shaik_Test",
+                "networkDomain": {
+                    "id": "f305d284-538f-45b2-b44b-2b5a20438046",
+                    "name": "Shaik_Network"
+                },
+                "privateIpv4Range": {
+                    "address": "172.16.16.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

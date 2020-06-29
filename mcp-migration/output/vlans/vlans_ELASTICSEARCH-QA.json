@@ -1,0 +1,34 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2018-11-22T12:22:20.000Z",
+                "datacenterId": "NA9",
+                "description": "VLAN for Elasticsearch QA environment",
+                "gatewayAddressing": "HIGH",
+                "id": "5bed210e-b0bb-4df3-90d4-a6f835b1c8ac",
+                "ipv4GatewayAddress": "10.0.1.254",
+                "ipv6GatewayAddress": "2607:f480:111:1201:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1201:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "ELASTICSEARCH-VLAN-QA",
+                "networkDomain": {
+                    "id": "0fb70048-41b6-49b7-878a-ad6d2edd8694",
+                    "name": "ELASTICSEARCH-QA"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.1.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

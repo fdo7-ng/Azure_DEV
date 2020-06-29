@@ -1,0 +1,107 @@
+{
+    "changed": false,
+    "data": {
+        "count": 4,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-11-12T20:14:55.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "21a2fc7a-1a50-495d-8f41-3f430277a6d0",
+                "ipv4GatewayAddress": "192.168.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1175:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1175:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "test_vlan",
+                "networkDomain": {
+                    "id": "6ad51c17-e24c-4f80-9577-cb7e8149a24d",
+                    "name": "kensinfield"
+                },
+                "privateIpv4Range": {
+                    "address": "192.168.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-01-27T21:18:21.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "61290e6e-023f-4e68-a988-295087251d82",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1300:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1300:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "bong_test",
+                "networkDomain": {
+                    "id": "6ad51c17-e24c-4f80-9577-cb7e8149a24d",
+                    "name": "kensinfield"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-03-31T20:48:03.000Z",
+                "datacenterId": "NA9",
+                "description": "K8 VLAN",
+                "gatewayAddressing": "LOW",
+                "id": "0c2351fd-0329-406d-ad1b-a28547c20fac",
+                "ipv4GatewayAddress": "10.0.1.1",
+                "ipv6GatewayAddress": "2607:f480:111:1145:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1145:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "kubernetes",
+                "networkDomain": {
+                    "id": "6ad51c17-e24c-4f80-9577-cb7e8149a24d",
+                    "name": "kensinfield"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.1.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": false,
+                "createTime": "2020-04-22T05:29:31.000Z",
+                "datacenterId": "NA9",
+                "description": "Ceph FS Storage Cluster VLAN",
+                "gatewayAddressing": "NONE",
+                "id": "f62e5df0-7569-4144-ad25-02f375123f96",
+                "ipv4GatewayAddress": "10.0.2.1",
+                "ipv6GatewayAddress": "2607:f480:111:1120:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1120:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "storage",
+                "networkDomain": {
+                    "id": "6ad51c17-e24c-4f80-9577-cb7e8149a24d",
+                    "name": "kensinfield"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.2.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

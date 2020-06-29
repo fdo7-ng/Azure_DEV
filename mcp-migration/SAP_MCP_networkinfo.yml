@@ -1,0 +1,179 @@
+# Use command below to load the environment variables manually or use the .nttmcp file
+# set +o history
+# export NTTMCP_API=api-<geo>.mcp-services.net
+# export NTTMCP_API_VERSION=2.11
+# export NTTMCP_PASSWORD=mypassword
+# export NTTMCP_USER=myusername
+# set -o history
+
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    cnd: 'SAPDRS_POC'
+    region: 'na'
+    datacenter: 'GEN_SAP1_GEO1_3'
+    # auth:
+    #   username: '{{ NTTMCP_USER }}'
+    #   password: '{{ NTTMCP_PASSWORD }}'
+    #   api: '{{ NTTMCP_API }}'
+    #   api_version: '{{ NTTMCP_API_VERSION }}'
+  tasks:
+  - name: List Cloud Network Domains
+    nttmcp.mcp.network_info:
+      # auth: "{{auth}}"
+      region: "{{ region }}"
+      datacenter: "{{ datacenter }}"
+    register: output
+  # - debug: var=output.data.network_domain
+  - set_fact:
+      network_domain_list: "{{ output.data.network_domain }}"
+  
+  - name: Network Domain List
+    debug: var=network_domain_list
+
+  - name: Loop thru Domain List
+    debug:
+      msg: "Network Domain Name:{{ item.name }}, datacenterid {{ item.datacenterId}}"
+    with_items: "{{ network_domain_list }}"
+
+
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/cloud_network_domains.json
+  #   delegate_to: localhost
+
+  # - name: List Specific Cloud Network Domains
+  #   nttmcp.mcp.network_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     name: '{{ cnd }}'
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/network_info.json
+  #   delegate_to: localhost
+
+  # - name: List all firewall rules within a Cloud Network Domain``
+  #   nttmcp.mcp.firewall_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: "{{ cnd }}"
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/firewall.json
+  #   delegate_to: localhost
+
+
+  # - name: List all servers
+  #   nttmcp.mcp.server_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: '{{ cnd }}'
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/servers.json
+  #   delegate_to: localhost
+  
+
+  # - name: List all Server Security Groups in a Network Domain
+  #   nttmcp.mcp.sec_group_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: '{{ cnd }}'
+  #     type: server
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/security_group_servers.json
+  #   delegate_to: localhost
+
+
+  # - name: List all VLAN Security Groups in a Network Domain
+  #   nttmcp.mcp.sec_group_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: '{{ cnd }}'
+  #     type: vlan
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/security_group_vlan.json
+  #   delegate_to: localhost
+
+  # - name: List Port Lists
+  #   nttmcp.mcp.port_list_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: '{{ cnd }}'
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/port_list.json
+  #   delegate_to: localhost
+
+  
+  # - name: List static routes
+  #   nttmcp.mcp.static_route_info:
+  #     # auth: "{{auth}}"
+  #     region: "{{ region }}"
+  #     datacenter: "{{ datacenter }}"
+  #     network_domain: '{{ cnd }}'
+  #   register: output
+  # - debug: var=output
+  # - copy:
+  #     content: '{{output | to_nice_json }}'
+  #     dest: ./output/static_routes.json
+  #   delegate_to: localhost
+
+
+  - name: Loop thru Domain List
+    debug:
+      msg: "Network Domain Name:{{ item.name }}, datacenterid {{ item.datacenterId}}"
+    with_items: "{{ network_domain_list }}"
+
+  # - name: List all VLANS per Network Domain
+  #   include_tasks: task_list_vlans.yml
+  #   with_items: "{{ network_domain_list }}"
+
+  # - name: List all Firewall Rules per Network Domain
+  #   include_tasks: task_list_firewall.yml
+  #   with_items: "{{ network_domain_list }}"
+
+  - name: List all Security Groups per Network Domain
+    include_tasks: task_list_secgroup.yml
+    with_items: "{{ network_domain_list }}"
+
+
+
+
+
+  # - name: List all VLANs per Network Domain
+  #   block:
+  #     - name: List all vlan for {{ item.name }}
+  #       nttmcp.mcp.vlan_info:
+  #         # auth: "{{auth}}"
+  #         region: "{{ region }}"
+  #         datacenter: "{{ datacenter }}"
+  #         network_domain: '{{ item.name }}'
+  #       register: output
+  #     - debug: var=output
+  #     - copy:
+  #         content: '{{output | to_nice_json }}'
+  #         dest: "./output/vlans_{{ item.name }}.json"
+  #       delegate_to: localhost
+  #   with_items: "{{ network_domain_list }}"

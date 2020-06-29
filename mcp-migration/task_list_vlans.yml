@@ -1,0 +1,13 @@
+
+- name: List all vlan for {{ item.name }}
+  nttmcp.mcp.vlan_info:
+    # auth: "{{auth}}"
+    region: "{{ region }}"
+    datacenter: "{{ datacenter }}"
+    network_domain: '{{ item.name }}'
+  register: output
+- debug: var=output
+- copy:
+    content: '{{output | to_nice_json }}'
+    dest: "./output/vlans_{{ item.name }}.json"
+  delegate_to: localhost

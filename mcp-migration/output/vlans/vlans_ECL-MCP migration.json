@@ -1,0 +1,105 @@
+{
+    "changed": false,
+    "data": {
+        "count": 4,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2018-10-05T13:59:58.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "aca4f73f-5a71-4f4c-aee1-ff343f18c477",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1340:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1340:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Jump host",
+                "networkDomain": {
+                    "id": "4b937193-94c8-417f-9968-d70cb5ed0443",
+                    "name": "ECL-MCP migration"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2018-10-05T13:59:58.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "aca4f73f-5a71-4f4c-aee1-ff343f18c477",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1340:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1340:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Jump host2",
+                "networkDomain": {
+                    "id": "4b937193-94c8-417f-9968-d70cb5ed0443",
+                    "name": "ECL-MCP migration"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.10.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2018-10-05T13:59:58.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "aca4f73f-5a71-4f4c-aee1-ff343f18c477",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1340:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1340:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Jump host3",
+                "networkDomain": {
+                    "id": "4b937193-94c8-417f-9968-d70cb5ed0443",
+                    "name": "ECL-MCP migration"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.30.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2019-09-10T12:12:24.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "24ee9a86-e7ba-42af-ac50-5a95c541b933",
+                "ipv4GatewayAddress": "172.16.254.1",
+                "ipv6GatewayAddress": "2607:f480:111:1460:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1460:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "RogueOne_MGMT",
+                "networkDomain": {
+                    "id": "4b937193-94c8-417f-9968-d70cb5ed0443",
+                    "name": "ECL-MCP migration"
+                },
+                "privateIpv4Range": {
+                    "address": "172.16.254.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

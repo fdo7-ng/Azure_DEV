@@ -1,0 +1,63 @@
+{
+    "changed": false,
+    "data": {
+        "count": 2,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-05-27T14:13:12.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "458f8a53-bacd-47b9-a0da-1204c468f911",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2264:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2264:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Raghu_VLan",
+                "networkDomain": {
+                    "id": "74365732-41ca-4872-8993-f30ddc5ee8bf",
+                    "name": "Raghu"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "progress": {
+                    "action": "DEPLOY_VLAN",
+                    "failureReason": "Creation of VLAN in F5 gear failed.",
+                    "requestTime": "2020-05-27T14:13:12.000Z",
+                    "userName": "raghu-lazuli"
+                },
+                "small": false,
+                "state": "FAILED_ADD"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-05-27T14:39:25.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "627913f3-6ae1-425a-8c97-0679b045265d",
+                "ipv4GatewayAddress": "10.0.1.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2270:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2270:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Raghu_VLan1",
+                "networkDomain": {
+                    "id": "74365732-41ca-4872-8993-f30ddc5ee8bf",
+                    "name": "Raghu"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.1.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

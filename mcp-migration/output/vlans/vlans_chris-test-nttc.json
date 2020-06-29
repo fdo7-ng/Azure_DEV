@@ -1,0 +1,34 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2017-01-31T18:17:22.000Z",
+                "datacenterId": "NA9",
+                "description": "nttc demo vlan 1",
+                "gatewayAddressing": "LOW",
+                "id": "cc0696a0-3189-4c68-898e-addfaa44b002",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1465:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1465:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "demo vlan 1",
+                "networkDomain": {
+                    "id": "dc8a876d-e3f3-41b3-9243-2825732bb0e7",
+                    "name": "chris-test-nttc"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

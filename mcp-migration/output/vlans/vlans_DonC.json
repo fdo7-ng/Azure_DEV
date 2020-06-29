@@ -1,0 +1,57 @@
+{
+    "changed": false,
+    "data": {
+        "count": 2,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2018-05-16T20:32:31.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "46c8e55f-8fb9-4211-8405-87dd51e29906",
+                "ipv4GatewayAddress": "172.16.1.1",
+                "ipv6GatewayAddress": "2607:f480:111:1138:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1138:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "dccTestVLAN",
+                "networkDomain": {
+                    "id": "ab7c3fe9-fecd-4e88-8b32-c79acbd6a9de",
+                    "name": "DonC"
+                },
+                "privateIpv4Range": {
+                    "address": "172.16.1.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-02-26T21:08:41.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "261b0d35-e2c5-4ce2-b2db-c5e9a3a1d8f3",
+                "ipv4GatewayAddress": "192.168.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1505:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1505:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "dccTestVLAN2",
+                "networkDomain": {
+                    "id": "ab7c3fe9-fecd-4e88-8b32-c79acbd6a9de",
+                    "name": "DonC"
+                },
+                "privateIpv4Range": {
+                    "address": "192.168.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

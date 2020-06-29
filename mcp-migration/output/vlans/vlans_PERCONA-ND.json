@@ -1,0 +1,34 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-01-30T10:41:53.000Z",
+                "datacenterId": "NA9",
+                "description": "PERCONA-VLAN",
+                "gatewayAddressing": "LOW",
+                "id": "c7bb0622-dffc-4638-804f-0794281d69e1",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1335:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1335:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "PERCONA-VLAN",
+                "networkDomain": {
+                    "id": "48a77e5f-1fcf-4bb7-97c6-2c216e798579",
+                    "name": "PERCONA-ND"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

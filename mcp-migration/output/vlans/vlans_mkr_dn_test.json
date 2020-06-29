@@ -1,0 +1,40 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2018-03-27T12:28:30.000Z",
+                "datacenterId": "NA9",
+                "description": "Creating Vlan in ND mkr_dn_test",
+                "gatewayAddressing": "LOW",
+                "id": "eca3cec7-b123-467c-b71f-1632676ca3cf",
+                "ipv4GatewayAddress": "192.168.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1310:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1310:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "vlan_mkr_1",
+                "networkDomain": {
+                    "id": "a057e1a3-9d69-4f5f-8ae9-519866a4915d",
+                    "name": "mkr_dn_test"
+                },
+                "privateIpv4Range": {
+                    "address": "192.168.0.0",
+                    "prefixSize": 16
+                },
+                "progress": {
+                    "action": "DELETE_VLAN",
+                    "failureReason": "Deletion of VLAN in F5 gear failed.",
+                    "requestTime": "2018-04-18T09:45:27.000Z",
+                    "userName": "mukeshroy-test"
+                },
+                "small": false,
+                "state": "FAILED_DELETE"
+            }
+        ]
+    },
+    "failed": false
+}

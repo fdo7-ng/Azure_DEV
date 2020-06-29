@@ -1,0 +1,129 @@
+{
+    "changed": false,
+    "data": {
+        "count": 5,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-05-13T14:24:24.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "9b70edb2-a05a-467c-8aeb-b55c667a6c50",
+                "ipv4GatewayAddress": "10.10.10.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2265:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2265:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Web_Tier_VLAN",
+                "networkDomain": {
+                    "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                    "name": "Advanced_POC"
+                },
+                "privateIpv4Range": {
+                    "address": "10.10.10.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-05-13T14:29:01.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "94aa99f6-a7ff-47a5-af2e-7c8f7f516255",
+                "ipv4GatewayAddress": "10.10.11.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2266:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2266:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "App_Tier_VLAN",
+                "networkDomain": {
+                    "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                    "name": "Advanced_POC"
+                },
+                "privateIpv4Range": {
+                    "address": "10.10.11.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-05-13T15:00:44.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "5241031e-4879-4d84-be5a-033bafe010da",
+                "ipv4GatewayAddress": "10.10.12.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2267:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2267:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "DB_Tier_VLAN",
+                "networkDomain": {
+                    "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                    "name": "Advanced_POC"
+                },
+                "privateIpv4Range": {
+                    "address": "10.10.12.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-05-19T16:54:36.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "e2f1eaae-76b7-45af-9ae2-84a0f89f01bf",
+                "ipv4GatewayAddress": "10.10.13.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2268:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2268:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "AD_Tier_VLAN",
+                "networkDomain": {
+                    "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                    "name": "Advanced_POC"
+                },
+                "privateIpv4Range": {
+                    "address": "10.10.13.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            },
+            {
+                "attached": true,
+                "createTime": "2020-05-22T19:32:46.000Z",
+                "datacenterId": "GEN_SAP1_GEO1_3",
+                "gatewayAddressing": "LOW",
+                "id": "ff44cc81-2091-4f78-ae1f-bfb933291b3a",
+                "ipv4GatewayAddress": "172.16.0.1",
+                "ipv6GatewayAddress": "2607:f480:9901:2263:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:9901:2263:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "Test_VLAN",
+                "networkDomain": {
+                    "id": "bfb35883-94c5-46ac-9c51-17260c01b99f",
+                    "name": "Advanced_POC"
+                },
+                "privateIpv4Range": {
+                    "address": "172.16.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

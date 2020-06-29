@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2020-03-30T13:48:55.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "8d2d9c52-db01-40ee-86e9-1ccdb74f4155",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1267:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1267:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "AS-test",
+                "networkDomain": {
+                    "id": "b9032161-2ce1-4b51-9797-ed137c179d11",
+                    "name": "ec-test"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}

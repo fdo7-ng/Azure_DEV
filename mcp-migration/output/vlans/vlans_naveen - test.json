@@ -1,0 +1,33 @@
+{
+    "changed": false,
+    "data": {
+        "count": 1,
+        "vlan": [
+            {
+                "attached": true,
+                "createTime": "2019-11-25T07:24:27.000Z",
+                "datacenterId": "NA9",
+                "gatewayAddressing": "LOW",
+                "id": "7ba243e7-69f2-4ba4-a955-bae6d27e01be",
+                "ipv4GatewayAddress": "10.0.0.1",
+                "ipv6GatewayAddress": "2607:f480:111:1374:0:0:0:1",
+                "ipv6Range": {
+                    "address": "2607:f480:111:1374:0:0:0:0",
+                    "prefixSize": 64
+                },
+                "name": "hutiyapa",
+                "networkDomain": {
+                    "id": "b4467160-f6c9-491c-b4a1-b3eef4c31e32",
+                    "name": "naveen - test"
+                },
+                "privateIpv4Range": {
+                    "address": "10.0.0.0",
+                    "prefixSize": 24
+                },
+                "small": false,
+                "state": "NORMAL"
+            }
+        ]
+    },
+    "failed": false
+}
